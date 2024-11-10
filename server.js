@@ -29,6 +29,6 @@ if(process.env.NODE_ENV === "production"){
         res.sendFile(path.resolve(dirPath,"frontend","build","index.html"));
             })
     }
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
